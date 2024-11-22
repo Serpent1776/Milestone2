@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends "base.html" %}
+    <head>
+        <title>Cleaning</title>
+    </head>
+{% block content %}
+    <div><a href="/home">Home</a></div>
+    <div><a href="/cleaning">Cleaning</a></div>
+    <div><a href="/rooms">Rooms</a></div>
+    <div><a href="/employee">Employee Homepage</a></div>
+    <div><a href="/logout">Log Out</a></div>
+    <hr>
+    <header>Rooms</header>
+    <table id="data" class="table table-striped">
+        <thead>
+            <tr>
+                <th>Room</th>
+                <th>Cleaned</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Room1</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>Room2</td>
+                <td>No</td>
+            </tr>
+        </tbody>
+    </table>
+{% endblock %}

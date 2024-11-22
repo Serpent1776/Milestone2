@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends "base.html" %}
+    <head>
+        <title>Booking</title>
+    </head>
+{% block content %}
+    <div><a href="/home">Home</a></div>
+    <div><a href="/booking">Bookings</a></div>
+    <div><a href="/cleaning">Cleaning</a></div>
+    <div><a href="/rooms">Rooms</a></div>
+    <div><a href="/employee">Employee Homepage</a></div>
+    <div><a href="/logout">Log Out</a></div>
+    <hr>
+    <header>Check-Ins</header>
+    <table id="data" class="table table-striped">
+        <thead>
+            <tr>
+                <th>Room</th>
+                <th>Name</th>
+                <th>Check In</th>
+                <th>Check Out</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Room1</td>
+                <td>Summer Nelson</td>
+                <td>Jan 4, 2025</td>
+                <td>Jan 5, 2025</td>
+            </tr>
+            <tr>
+                <td>Room2</td>
+                <td>Avery Lamprecht</td>
+                <td>Jan 4, 2025</td>
+                <td>Jan 5, 2025</td>
+            </tr>
+        </tbody>
+    </table>
+{% endblock %}
+</html>
